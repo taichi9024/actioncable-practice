@@ -1,0 +1,8 @@
+<h1>お友達一覧</h1>
+<h3>ログイン中のユーザー：<%= current_user.name %></h3>
+
+<% @users.each do |u| %>
+    <h2>ID: <%= u.id %>
+    NAME: <%= link_to u.name, user_path(u.id) %></h2>
+<% end %>
+

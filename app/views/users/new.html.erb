@@ -1,0 +1,7 @@
+<h1>ログインページ</h1>
+<%= form_with url:users_path, local:true do |f| %>
+    <%= f.label:name%>
+    <%= f.text_field:name%>
+    <%= f.submit %>
+<% end %>
+
